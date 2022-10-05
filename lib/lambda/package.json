@@ -3,7 +3,13 @@
   "repository": "n/a",
   "license": "All rights reserved for deployer.",
   "dependencies": {
-    "artillery-core": "^2.0.3-0",
-    "csv-parse": "^1.1.7"
-  }
+    "artillery-core": "^4.1.2",
+    "csv-parse": "^4.4.6",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
